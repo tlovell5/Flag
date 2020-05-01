@@ -1,0 +1,541 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, rgb(250, 219, 172), rgb(90, 248, 248));
+}
+
+.allFlags {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(4, 100px);
+}
+
+.picture {
+    width: auto;
+    border: 2px solid black;
+    margin-left: 20px;
+   
+
+}
+
+
+.allFlags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+
+
+}
+
+.france {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: white;
+    padding: 50px;
+    width: 125px;
+    outline: black;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+
+.france:before {
+    content: "";
+    width: 33.33%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.france:after {
+    content: "";
+    width: 33.33%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.germany {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: red;
+    padding: 50px;
+    width: 125px;
+    outline: black;
+
+
+}
+
+.germany:before {
+    content: "";
+    width: 100%;
+    height: 33.33%;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.germany:after {
+    content: "";
+    width: 100%;
+    height: 33.33%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.madagascar {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: rgb(248, 236, 236);
+    padding: 50px;
+    width: 125px;
+    outline: black;
+
+}
+
+.madagascar:before {
+    content: "";
+    width: 68%;
+    height: 50%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.madagascar:after {
+    content: "";
+    width: 68%;
+    height: 50%;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+
+.switzerland {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: red;
+    padding: 50px;
+    width: 125px;
+    outline: black;
+
+}
+
+.switzerland:before {
+    content: "";
+    width: 35%;
+    height: 17%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.switzerland:after {
+    content: "";
+    width: 10%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sweden {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: rgb(5, 121, 230);
+    padding: 50px;
+    width: 125px;
+    outline: black;
+
+}
+
+.sweden:before {
+    content: "";
+    width: 12%;
+    height: 100%;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.sweden:after {
+    content: "";
+    width: 100%;
+    height: 23%;
+    background-color: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gambia {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: white;
+    padding: 50px;
+    width: 125px;
+    outline: black;
+
+}
+
+.gambia:before {
+    content: "";
+    width: 100%;
+    height: 33.33%;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.gambia:after {
+    content: "";
+    width: 100%;
+    height: 33.33%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.gambiaBlue {
+    content: "";
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    position: absolute;
+    top: 40%;
+    right: 0;
+
+}
+
+
+.tonga {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: red;
+    padding: 50px;
+    width: 125px;
+    outline: black;
+
+}
+
+.tongaRed {
+    content: "";
+    width: 45%;
+    height: 48%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.tongaRed:before {
+    content: "";
+    width: 35%;
+    height: 17%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.tongaRed:after {
+    content: "";
+    width: 10%;
+    height: 65%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.japan {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: white;
+    padding: 50px;
+    width: 125px;
+    outline: black;
+}
+
+.japan:before {
+    content: "";
+    width: 40%;
+    height: 60%;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.greece {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: white;
+    padding: 50px;
+    width: 125px;
+    outline: black;
+
+}
+
+.greeceBlue {
+    content: "";
+    width: 40%;
+    height: 48%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.greeceBlue:before {
+    content: "";
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.greeceBlue:after {
+    content: "";
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.greeceTop {
+    content: "";
+    width: 60%;
+    height: 48%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.greeceTop:before {
+    content: "";
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+
+}
+
+.greeceTop:after {
+    content: "";
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.greeceBetween {
+    content: "";
+    width: 100%;
+    height: 21%;
+    background-color: blue;
+    position: absolute;
+    top: 41%;
+    right: 0;
+}
+
+.greeceBot {
+    content: "";
+    width: 100%;
+    height: 43%;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.greeceBot:before {
+    content: "";
+    width: 100%;
+    height: 25%;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.greeceBot:after {
+    content: "";
+    width: 100%;
+    height: 25%;
+    background-color: blue;
+    position: absolute;
+    top: 43%;
+    left: 0;
+}
+
+
+
+.niger:before {
+    content: "";
+    width: 100%;
+    height: 33.33%;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.niger:after {
+    content: "";
+    width: 100%;
+    height: 33.33%;
+    background-color: rgb(255, 81, 0);
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.nigerDot {
+    content: "";
+    width: 20%;
+    height: 30%;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgb(255, 81, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.niger {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: white;
+    padding: 50px;
+    width: 125px;
+    outline: black;
+
+}
+
+.maldives {
+    margin-top: 25px;
+    margin-left: 15px;
+    border: 2px solid black;
+    position: relative;
+    background-color: rgb(250, 11, 51);
+    padding: 50px;
+    width: 125px;
+    outline: black;
+
+}
+
+.maldives:before {
+    content: "";
+    width: 60%;
+    height: 55%;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.maldives:after {
+    content: "";
+    width: 25%;
+    height: 40%;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.maldivesDot {
+    content: "";
+    width: 25%;
+    height: 40%;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
